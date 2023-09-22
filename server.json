@@ -1,16 +1,16 @@
 {
 	"name": "Tuya-Tester",
-	"docs": "https://github.com/sjpbailey/udi-tuya-poly-curtain-aircir-api-v3/README.md",
+	"docs": "https://github.com/sjpbailey/udi-tuya-poly-curtain-prod-v3/README.md",
 	"type": "python3",
 	"executable": "tuya-cloud.py",
 	"install": "install.sh",
-	"description": "Tuya Lights and switches by TreatLife",
+	"description": "Tuya Curtain and Drape controller",
 	"notice": "Please follow all codes & safety precautions for mechanical equipment",
-	"shortPoll": "600",
+	"shortPoll": "60",
 	"longPoll": "6600",
 	"testMode": false,
 	"logLevel": "INFO",
-	"profile_version": "1.0.0",
+	"profile_version": "1.0.1",
 	"customParams": {
 		"apiAccessId": "Your_Access_Id",
 		"apiKey": "Your_Secret",
@@ -21,12 +21,12 @@
 	},
 	"credits": [
 		{
-			"title": "Tuya TreatLife LED Bulbs and Switches",
+			"title": "Tuya Curtain Drapes",
 			"author": "Steve Bailey (sjpbailey)",
 			"version": "1.0.1",
-			"date": "August 25, 2023",
-			"source": "https://github.com/sjpbailey/udi-tuya-poly-curtain-aircir-api-v3",
-			"license": "https://github.com/sjpbailey/udi-tuya-poly-curtain-aircir-api-v3/LICENSE"
+			"date": "September 21, 2023",
+			"source": "https://github.com/sjpbailey/udi-tuya-poly-curtain-prod-v3",
+			"license": "https://github.com/sjpbailey/udi-tuya-poly-curtain-prod-v3/LICENSE"
 		}
 	],
 	"store": {
