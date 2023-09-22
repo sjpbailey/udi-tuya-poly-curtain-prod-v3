@@ -49,7 +49,7 @@ if issues == 0:
 
 # Read in the NLS file and build a dictionary.
 nls = {}
-with open('/Users/stevenbailey/UDI Development PG3/Nodeservers/udi-tuya-poly-curtain-prod-v3 copy/profile/nls/en_us.txt') as fp:
+with open('profile/nls/en_us.txt') as fp:
     for line in fp:
         line = line.rstrip()
         if line != "" and line[0] != '#':
@@ -58,7 +58,7 @@ with open('/Users/stevenbailey/UDI Development PG3/Nodeservers/udi-tuya-poly-cur
 
 # Now parse the node definitions and build the appropriate driver arrays
 node_tree = ET.parse(
-    '/Users/stevenbailey/UDI Development PG3/Nodeservers/udi-tuya-poly-curtain-prod-v3 copy/profile/nodedef/nodedefs.xml')
+    'profile/nodedef/nodedefs.xml')
 root = node_tree.getroot()
 for item in root:
     #nodeType = item.attrib['nodeType']

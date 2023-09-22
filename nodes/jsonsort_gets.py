@@ -8,8 +8,8 @@ from typing import NoReturn
 from tuya_bulb_control import Bulb
 from tkinter import Tk, Button, colorchooser
 
-ACCESS_ID = ""
-ACCESS_KEY = ""
+ACCESS_ID = "your api id"
+ACCESS_KEY = "your api key"
 API_ENDPOINT = "https://openapi.tuyaus.com/"
 MQ_ENDPOINT = "wss://mqe.tuyaus.com:8285/"
 API_REGION = "us"
@@ -28,7 +28,7 @@ openapi.connect()
 
 # Call APIs from Tuya
 # Get device information from all devices
-response = openapi.get("/v1.0/users//devices")
+response = openapi.get("/v1.0/users/YOUR API UID/devices")
 # print(type(response))
 
 # Save polling data sample
@@ -39,7 +39,7 @@ print(response1)
 #for i in response1['result']:
 #    print(i)
 
-DEVICELED_ID = 'ebd73308f740063caalpdc'
+DEVICELED_ID = 'device ID'
 response = openapi.get("/v1.0/iot-03/devices/{}".format(DEVICELED_ID) + "/status/")  # DEVICE_ID
 
 #response1 = json.dumps(response, indent=4)  # current, indent=4
