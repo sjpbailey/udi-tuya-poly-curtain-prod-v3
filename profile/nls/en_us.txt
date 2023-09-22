@@ -1,0 +1,21 @@
+# controller
+ND-tuya-NAME = Tuya NodeServer Controller
+ND-tuya-ICON = Alarm
+ST-tuyanls-ST-NAME = Tuya NodeServer Running
+CMD-tuyanls-REMOVE_NOTICES_ALL-NAME = Remove Notices
+CMD-tuyanls-DISCOVER-NAME = Query
+
+# Curtain
+ND-curtain-NAME = Curtain
+ND-curtain-ICON = LampAndSwitch
+ST-curt-ST-NAME = Node Status
+ST-curt-GV3-NAME = Curtain Level
+ST-curt-GV4-NAME = Curtain Mode
+
+CMD-curt-STLVL-NAME = Curtain Percent
+CMD-curt-MODECUR-NAME = Curtain Command
+
+# Curtain Modes
+MODECUR-0 = Stop
+MODECUR-1 = Open
+MODECUR-2 = Close

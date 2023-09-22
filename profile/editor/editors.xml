@@ -1,0 +1,40 @@
+<editors>
+    <!-- Boolean -->
+    <editor id="bool">
+        <range uom="2" subset="0,1"/>
+    </editor>
+    <editor id="LEVEL">
+        <range uom="51" min="1" max="100" step="1" prec="0"/>
+    </editor>
+    <editor id = "PIR2" > 
+    <range  uom="56" min="0" max="10000" step="1" prec="0" />
+    </editor>
+    <editor id="PIR2C">
+        <range uom="25" subset="0-5" nls="PIR2C" />
+    </editor>
+    <editor id="PIRLEVEL">
+        <range uom="56" min="1" max="9" step="1" prec="0"/>
+    </editor>
+    <editor id="PIRDETEC">
+        <range uom="38" min="0" max="1000" step="1" prec="0"/>
+    </editor>
+    <editor id="MODECUR">
+        <range uom="25" subset="0-2" nls="MODECUR" />
+    </editor>
+    <editor id="MODEVRT">
+        <range uom="25" subset="0-1" nls="MODEVRT" />
+    </editor>
+    <editor id="MODEA">
+        <range uom="25" subset="0-3" nls="MODEA" />
+    </editor>
+    <editor id="MODESP">
+        <range uom="25" subset="0-3" nls="MODESP" />
+    </editor>
+    <editor id="MODEHOR">
+        <range uom="25" subset="0-1" nls="MODEHOR" />
+    </editor>
+    <editor id="MODEW">
+        <range uom="25" subset="0-3" nls="MODEW" />
+    </editor>
+
+</editors>
