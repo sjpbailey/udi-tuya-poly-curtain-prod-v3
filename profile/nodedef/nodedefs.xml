@@ -44,7 +44,7 @@
             <st id="ST" editor="bool" />
             <st id="GV3" editor="LEVEL" />
             <st id="GV4" editor="MODECUR2" />
-            <st id="GV5" editor="DIRFB" />
+            <st id="GV5" editor="MODEDIR" />
         </sts>
         <cmds>
             <sends />
