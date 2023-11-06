@@ -38,4 +38,33 @@
         </cmds>
     </nodeDef>
 
+    <nodeDef id="curtain2" nls="curt2">
+        <editors />
+        <sts>
+            <st id="ST" editor="bool" />
+            <st id="GV3" editor="LEVEL" />
+            <st id="GV4" editor="MODECUR2" />
+            <st id="GV5" editor="DIRFB" />
+        </sts>
+        <cmds>
+            <sends />
+            <accepts>
+                
+                <cmd id="STLVL">
+                    <p id="" editor="LEVEL" init="GV3" />
+                </cmd>
+
+                <cmd id="MODECUR2">
+                    <p id="" editor="MODECUR2" init="GV4" />
+                </cmd>
+
+                <cmd id="MODEDIR">
+                    <p id="" editor="DIRFB" init="GV5" />
+                </cmd>
+
+                <cmd id="QUERY" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+
 </nodeDefs>

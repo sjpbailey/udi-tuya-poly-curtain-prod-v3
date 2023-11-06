@@ -14,6 +14,7 @@ from tuya_connector import (
 
 
 from nodes import tuya_curtain_node
+from nodes import tuya_curtain_V2_node
 
 LOGGER = udi_interface.LOGGER
 Custom = udi_interface.Custom
@@ -163,6 +164,14 @@ class TuyaController(udi_interface.Node):
                 LOGGER.info("Curtain")
                 LOGGER.info('\n')
                 node = tuya_curtain_node.CurtainNode(
+                    self.poly, self.address, address, name, new_id, deviceid, self.apiAccessId, self.apiSecret, self.apiEndpoint, self.apiRegion)
+                self.poly.addNode(node)
+                self.wait_for_node_done()
+            elif i['product_id'] == "zuz7f94z":
+                LOGGER.info('Device Type')
+                LOGGER.info("Curtain")
+                LOGGER.info('\n')
+                node = tuya_curtain_V2_node.CurtainNode(
                     self.poly, self.address, address, name, new_id, deviceid, self.apiAccessId, self.apiSecret, self.apiEndpoint, self.apiRegion)
                 self.poly.addNode(node)
                 self.wait_for_node_done()

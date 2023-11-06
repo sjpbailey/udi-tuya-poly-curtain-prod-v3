@@ -9,5 +9,8 @@
     <editor id="MODECUR">
         <range uom="25" subset="0-2" nls="MODECUR" />
     </editor>
+    <editor id="MODECUR2">
+        <range uom="25" subset="0-3" nls="MODECUR2" />
+    </editor>
     
 </editors>

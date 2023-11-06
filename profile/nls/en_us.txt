@@ -19,3 +19,23 @@ CMD-curt-MODECUR-NAME = Curtain Command
 MODECUR-0 = Stop
 MODECUR-1 = Open
 MODECUR-2 = Close
+
+# Curtain
+ND-curtain2-NAME = Curtain
+ND-curtain2-ICON = LampAndSwitch
+ST-curt2-ST-NAME = Node Status
+ST-curt2-GV3-NAME = Curtain Level
+ST-curt2-GV4-NAME = Curtain Mode
+
+CMD-curt2-STLVL-NAME = Curtain Percent
+CMD-curt2-MODECUR2-NAME = Curtain Command
+
+# Curtain Modes
+MODECUR2-0 = Stop
+MODECUR2-1 = Open
+MODECUR2-2 = Close
+MODECUR2-3 = Continue
+
+# Curtain Direction
+DIRFB-0 = Forward
+DIRFB-1 = Back
