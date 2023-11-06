@@ -12,5 +12,8 @@
     <editor id="MODECUR2">
         <range uom="25" subset="0-3" nls="MODECUR2" />
     </editor>
+    <editor id="MODEDIR">
+        <range uom="25" subset="0-1" nls="MODEDIR" />
+    </editor>
     
 </editors>
