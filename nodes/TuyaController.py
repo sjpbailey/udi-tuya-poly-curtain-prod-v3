@@ -159,7 +159,7 @@ class TuyaController(udi_interface.Node):
             LOGGER.info(address)
             model = i['model']
             LOGGER.info(model)
-            if i['model'] == "HC700TY" or i['model'] == "BMC33D WiFi" or i['product_name'] == "CURTAIN SYSTEM" or i['product_name'] == "Curtain" or i['product_id'] == "zuz7f94z":
+            if i['model'] == "HC700TY" or i['model'] == "BMC33D WiFi" or i['product_name'] == "CURTAIN SYSTEM" or i['product_name'] == "Curtain":
                 LOGGER.info('Device Type')
                 LOGGER.info("Curtain")
                 LOGGER.info('\n')
