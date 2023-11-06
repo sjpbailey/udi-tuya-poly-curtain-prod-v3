@@ -26,9 +26,11 @@ ND-curtain2-ICON = LampAndSwitch
 ST-curt2-ST-NAME = Node Status
 ST-curt2-GV3-NAME = Curtain Level
 ST-curt2-GV4-NAME = Curtain Mode
+ST-curt2-GV5-NAME = Curtain Direction
 
 CMD-curt2-STLVL-NAME = Curtain Percent
 CMD-curt2-MODECUR2-NAME = Curtain Command
+CMD-curt2-MODEDIR-NAME = Curtain Direction
 
 # Curtain Modes
 MODECUR2-0 = Stop
@@ -37,5 +39,5 @@ MODECUR2-2 = Close
 MODECUR2-3 = Continue
 
 # Curtain Direction
-DIRFB-0 = Forward
-DIRFB-1 = Back
+MODEDIR-0 = Forward
+MODEDIR-1 = Back
