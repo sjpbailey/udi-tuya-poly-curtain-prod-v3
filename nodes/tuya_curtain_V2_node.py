@@ -174,7 +174,7 @@ class CurtainNode(udi_interface.Node):
     id = 'curtain2'
 
     commands = {
-        'MODECUR': modeOn,
+        'MODECUR2': modeOn,
         'MODEDIR': modeDir,
         'STLVL': setDim,
         'QUERY': query,
