@@ -59,7 +59,7 @@
                 </cmd>
 
                 <cmd id="MODEDIR">
-                    <p id="" editor="DIRFB" init="GV5" />
+                    <p id="" editor="MODEDIR" init="GV5" />
                 </cmd>
 
                 <cmd id="QUERY" />
