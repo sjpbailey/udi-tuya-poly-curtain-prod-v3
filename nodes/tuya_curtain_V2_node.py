@@ -114,10 +114,8 @@ class CurtainNode(udi_interface.Node):
         openapi = TuyaOpenAPI(API_ENDPOINT, ACCESS_ID, ACCESS_KEY)
         openapi.connect()
         self.SwStat(self)
-
         ivr_one = 'percent'
         percent = int(command.get('value'))
-
         def set_percent(self, command):
             percent = int(command.get('value')) #*10
         if percent < 0 or percent > 100:
@@ -138,7 +136,7 @@ class CurtainNode(udi_interface.Node):
         response1 = openapi.get(
             "/v1.0/iot-03/devices/{}".format(DEVICELED_ID) + "/status/")  # DEVICE_ID
         LOGGER.info(response1)
-        for i in response1['result'][0:1]:
+        for i in response1['result'][1:2]:
             self.setDriver('GV3', i['value'])
             LOGGER.info(i['value'])
             
