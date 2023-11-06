@@ -52,7 +52,7 @@ class CurtainNode(udi_interface.Node):
             commands = {'commands': [{'code': 'control', 'value': 'stop'}]}
             openapi.post(
                 '/v1.0/iot-03/devices/{}/commands'.format(DEVICELED_ID), commands)
-            LOGGER.info('Colour')
+            LOGGER.info('stop')
             time.sleep(.1)
             self.SwStat(self)
         # Open
@@ -60,7 +60,7 @@ class CurtainNode(udi_interface.Node):
             commands = {'commands': [{'code': 'control', 'value': 'open'}]}
             openapi.post(
                 '/v1.0/iot-03/devices/{}/commands'.format(DEVICELED_ID), commands)
-            LOGGER.info('Scene')
+            LOGGER.info('open')
             time.sleep(.1)
             self.SwStat(self)
         # Close
@@ -68,6 +68,7 @@ class CurtainNode(udi_interface.Node):
             commands = {'commands': [{'code': 'control', 'value': 'close'}]}
             openapi.post(
                 '/v1.0/iot-03/devices/{}/commands'.format(DEVICELED_ID), commands)
+            LOGGER.info('close')
             time.sleep(.5)
             self.SwStat(self)
         # Continue
@@ -75,6 +76,7 @@ class CurtainNode(udi_interface.Node):
             commands = {'commands': [{'code': 'control', 'value': 'continue'}]}
             openapi.post(
                 '/v1.0/iot-03/devices/{}/commands'.format(DEVICELED_ID), commands)
+            LOGGER.info('continue')
             time.sleep(.5)
             self.SwStat(self)
             
