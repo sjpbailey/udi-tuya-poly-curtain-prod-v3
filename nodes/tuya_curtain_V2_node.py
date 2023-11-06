@@ -89,7 +89,7 @@ class CurtainNode(udi_interface.Node):
         self.modeOn = int(command.get('value'))
         self.setDriver('GV5', self.modeOn)
         # Forward
-        if self.modeOn == 0:
+        if self.modeDir == 0:
             commands = {'commands': [{'code': 'control_back_mode', 'value': 'forward'}]}
             openapi.post(
                 '/v1.0/iot-03/devices/{}/commands'.format(DEVICELED_ID), commands)
@@ -97,7 +97,7 @@ class CurtainNode(udi_interface.Node):
             time.sleep(.1)
             self.SwStat(self)
         # Back
-        elif self.modeOn == 1:
+        elif self.modeDir == 1:
             commands = {'commands': [{'code': 'control_back_mode', 'value': 'back'}]}
             openapi.post(
                 '/v1.0/iot-03/devices/{}/commands'.format(DEVICELED_ID), commands)
